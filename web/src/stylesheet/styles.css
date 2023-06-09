@@ -1,6 +1,29 @@
 
 body {
-    font-family: Alata,Arial, Helvetica, sans-serif;
+    font-family: Alata,Arial, Helvetica, sans-serif !important;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    z-index: 3;
+}
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: width .5s;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 li{
@@ -17,7 +40,7 @@ nav a {
     text-decoration:none;
 }
 
-.navbar {
+.navbar-contenedor {
     display: flex;
     align-items: center;
     background-color: antiquewhite;
@@ -44,7 +67,7 @@ nav a {
     text-align: center;
     text-justify: center;
     position: relative;
-    padding: 10px 20px;
+    padding: 10px;
     background: white;
     font-size: 1.5rem;
     border-top-right-radius: 10px;
@@ -59,12 +82,14 @@ nav a {
         position: absolute;
         border: 0px solid #fff;
         transition: all 1s;
+        
     }
     &:after {
         top: -1px;
         left: -1px;
         border-top: 2px solid black;
         border-left: 2px solid black;
+        
     }
     &:before {
         bottom: -1px;
@@ -92,7 +117,7 @@ nav a {
 
 .navbar__container__img {
     display: flex;
-    position: absolute;
+    position: relative;
     left: 3px;
 }
 
@@ -100,33 +125,65 @@ nav a {
     width: 100%;
     z-index: 0;
     height: auto;
+    opacity: .5;
 }
 
 .carousel {
     position: relative;
-    top:15vh;
-    height: 100vh;
-    overflow: hidden;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.transparent {
-    background-color: rgba(255, 255, 255, 50%);
-    height: 100%;
-    width: 100vw;
+.transparent{
     position: absolute;
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 10px 10px 10px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.transparent h1 {
+    display: block;
+    font-size: 4rem;
+    margin-top: 15%;
+}
+
+.transparent p {
+    font-size: 4rem;
+    display:block;
+}
+
+@media (max-width: 720px) {
+    .transparent p, .transparent h1 {
+        font-size: 3rem;
+    }
+    .carousel {
+        position: relative;
+        top:15vh;
+        height: 45vh;
+        overflow: hidden;   
+    }
+
+}
+
+.img__galery__effect {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
 
 footer {
+    background-color: white;
     width: 100%;    
     z-index: 3;
     justify-content: space-between;
     text-justify: center;
     align-items: center;
+    position:fixed;
+    bottom: 0;
 }
 
 .iconos {
@@ -137,4 +194,5 @@ footer {
     font-size: 2rem
 
 }
+
 
