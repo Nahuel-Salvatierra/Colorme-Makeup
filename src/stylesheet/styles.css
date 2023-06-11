@@ -85,12 +85,25 @@ nav div a {
         }
     }
 }
-
+/* Body---------------------------------------------------------------- */
+/* imagen principal */
 .img__main {
     width: 100%;
-    z-index: 0;
-    height: auto;
-    opacity: .5;
+    opacity: 0.5;
+   
+}
+.img__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__name {
+    position: absolute;
+    top: 0;
+    color: black;
+    font-size: 4rem;
 }
  
 /* footer */
@@ -119,11 +132,11 @@ footer {
     align-items: center;
     width: 100%;
 }
-/* Responsive */
 .centrado {
     align-items: center;
     display: block;
 }
+/* Responsive */ 
 
 @media (min-width:576px) {
     .button__link {
