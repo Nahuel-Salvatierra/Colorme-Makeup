@@ -20,9 +20,10 @@
 
 </head>
 <header>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="src/img/colorme-makeup-logo.png"
+            <a class="navbar-brand" href="./index.html"><img src="src/img/colorme-makeup-logo.png"
                     alt="Logo de colorme-makeup-logo" class="navbar__img"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,7 @@
             <ul class="collapse navbar-collapse" id="navbarText">
                 <div class="navbar-nav responsive mt-1">
                     <span class="button__link fs-4" id="cosplay">Cosplay</span>
-                    <span class="button__link fs-4">Makeup Social</span>
+                    <span class="button__link fs-4" id="maquillaje">Makeup Social</span>
                     <span class="button__link fs-4">Makeup Artist EFX</span>
                 </div>
             </ul>
@@ -39,36 +40,112 @@
     </nav>
 </header>
 
-<body>
-    <div class="img__container">
+<main>
+    <div class="img__container ">
         <h2 class="title__name">Franco Gigena</h2>
         <img class="img__main" src="src/img/WhatsApp Image 2023-06-08 at 8.39.06 PM.jpeg" alt="">
     </div>
-    <div class="fondo">
-        <div class="img__galery__effect">
-            <section>
-                <img src="src/img/WhatsApp Image 2023-06-10 at 1.51.59 PM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-08 at 8.39.04 PM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-10 at 1.52.05 PM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-08 at 8.36.09 PM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-09 at 12.04.11 AM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-08 at 11.58.08 PM.jpeg" alt="">
-                <img src="src/img/WhatsApp Image 2023-06-08 at 11.57.20 PM.jpeg" alt="">
-            </section>
-        </div>
-    </div>
 
-    <footer>
-        <div class="iconos">
-            <a href="https://www.instagram.com/colorme_makeup/"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/1130308840"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.facebook.com/colormemakeup/"><i class="bi bi-facebook"></i></a>
+    <!-- BIO -->
+    <section class="row">
+        <div class="col-12 bio__container">
+            <img class="bio-img" src="src/img/WhatsApp Image 2023-06-12 at 3.25.39 PM.jpeg" alt="">
+            <h1 class="titulo-prof">TITULO PROFESION</h1>
+            <p class="bio">Con 15 años de experiencia en el rubro del Maquillaje llevando mi pasión por los colores y
+                creatividad a un nivel profesional.
+
+                Además, realizo Peinados para diferentes ocasiones e incursioné en el diseño y armado de tocados, pines,
+                hebillas, accesorios para el pelo…
+
+                Estudié en destacadas academias y fui parte del staff de la reconocida marca Mac Cosmetics adquiriendo
+                conocimientos para trabajar con pieles de todo tipo y cuento con mi estudio privado en Capital Federal.
+
+                Me destaco por el trato personalizado con la persona que vaya a contratar mis servicios, entendiendo que
+                es una experiencia inolvidable y de gran carga emocional.
+
+                Acompaño y transformo tu evento en un momento mágico y especial desde nuestro primer contacto.</p>
+
         </div>
-    </footer>
-    <script src="./src/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+</main>
+<!-- Flayer servicios -->
+<h1 class="title__service">maquillaje</h1>
+<section class="flayer__container">
+    <div class="flayer__item">
+        <img src="src/img/depositphotos_30549281-stock-photo-beautiful-bride-with-wedding-makeup.jpg"
+            class="flayer__img" alt="">
+        <p class="flayer__title">bodas</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-12 at 3.20.39 PM (1).jpeg" class="flayer__img" alt="">
+        <p class="flayer__title">producciones</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-12 at 3.25.38 PM.jpeg" class="flayer__img" alt="">
+        <p class="flayer__title">casual</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/portrait-beautiful-girl-wedding-dress-bride_shutterstock_695262379.jpg" class="flayer__img"
+            alt="">'
+        <p class="flayer__title">15 años</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+</section>
+
+<h1 class="title__service">maquillaje artistico</h1>
+
+<section class="flayer__container">
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-12 at 3.25.40 PM.jpeg"
+            class="flayer__img" alt="">
+        <p class="flayer__title">maquillaje artistico</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-12 at 3.20.22 PM (1).jpeg" class="flayer__img" alt="">
+        <p class="flayer__title">producciones</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-10 at 1.52.10 PM.jpeg" class="flayer__img" alt="">
+        <p class="flayer__title">hombre gato</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+    <div class="flayer__item">
+        <img src="src/img/WhatsApp Image 2023-06-10 at 1.52.07 PM (2).jpeg" class="flayer__img"
+            alt="">'
+        <p class="flayer__title">casual</p>
+        <button class="button-whatsapp">Reserva ahora</button>
+    </div>
+</section>
+<!-- Carrusel imagenes -->
+<section class="fondo">
+    <div>
+        <section class="img__galery__effect">
+            <img src="src/img/WhatsApp Image 2023-06-10 at 1.51.59 PM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-08 at 8.39.04 PM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-10 at 1.52.05 PM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-08 at 8.36.09 PM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-09 at 12.04.11 AM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-08 at 11.58.08 PM.jpeg" alt="">
+            <img src="src/img/WhatsApp Image 2023-06-08 at 11.57.20 PM.jpeg" alt="">
+        </section>
+    </div>
+</section>
+
+<footer>
+    <div class="iconos">
+        <a href="https://www.instagram.com/colorme_makeup/"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/1130308840"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/colormemakeup/"><i class="bi bi-facebook"></i></a>
+    </div>
+</footer>
+<script src="./src/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

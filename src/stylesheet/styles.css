@@ -2,28 +2,9 @@ body {
     font-family: Alata, Arial, Helvetica, sans-serif !important;
 }
 
-/* Galeria de imagenes */
-section {
-    display: flex;
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    z-index: 3;
-}
-
-section img {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: width .5s;
-}
-
-section img:hover {
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+ul div a{
+    text-decoration: none;
+    color: black;
 }
 
 /* navbar top */
@@ -41,13 +22,16 @@ nav div a {
     margin-left: .5em;
     border-radius: 50%;
     border: 1px solid black;
+    aspect-ratio: 1/1;
 }
+
 .collapse {
     height: 90%;
 }
+
 .responsive {
-    justify-content: center!important;
-    align-items: center!important;
+    justify-content: center !important;
+    align-items: center !important;
     width: 100%;
     height: 9vh;
 }
@@ -55,14 +39,15 @@ nav div a {
 
 /* Botones de navbar */
 .button__link {
+    text-decoration: none;
     display: flex;
     cursor: pointer;
     width: 24vw;
     height: 100%;
     align-items: center;
     justify-content: center;
-    text-align: center!important;
-    text-justify: center!important;
+    text-align: center !important;
+    text-justify: center !important;
     position: relative;
     background: white;
     font-size: 1rem !important;
@@ -70,6 +55,7 @@ nav div a {
     border-bottom-left-radius: 10px;
     transition: all 1s;
     margin: 0 1rem;
+
     &:after,
     &:before {
         content: "";
@@ -112,7 +98,6 @@ nav div a {
 .img__main {
     width: 100%;
     opacity: 0.5;
-
 }
 
 .img__container {
@@ -130,9 +115,135 @@ nav div a {
     top: 40%
 }
 
+.card-img-bottom {
+    max-height: 25vh;
+    width: auto;
+    object-fit: cover;
+}
+
+/* BIO */
+.bio-img {
+    margin-top: 3rem;
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.bio {
+    margin-top: 2rem;
+    margin: 0 4rem;
+    text-align: center;
+}
+
+.bio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.titulo-prof {
+    padding: 2rem 0;
+}
+
+
+/* flayer */
+.title__service{
+    text-transform: uppercase;
+}
+
+.flayer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20rem;
+    grid-gap: 1rem;
+    margin: 3rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.flayer__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.flayer__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(0.8);
+    filter: brightness(.8)
+}
+
+.flayer__img:hover {
+    scale: 1.05;
+    box-shadow: 0px 10px 20px rgba(222, 138, 255, 0.5);
+    transition: scale .3s ease;
+
+}
+.flayer__img:hover ~ .button-whatsapp {
+    scale: 1.1;
+    transform: scale .3s ease;
+    color: black
+}
+.button-whatsapp:hover {
+    scale: 1.1;
+    transform: scale .3s ease;
+    color: black
+}
+
+.flayer__title {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1rem;
+    text-transform: uppercase;
+}
+
+.button-whatsapp {
+    position: absolute;
+    color:gray;
+    background-color: pink;
+    align-self: bottom;
+    border-radius: 40px;
+    bottom: 20px;
+    border: none;
+    padding: 0 10px;
+}
+
+
+/* Galeria de imagenes */
+.img__galery__effect {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+}
+
+.img__galery__effect img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: width .5s;
+}
+
+.img__galery__effect img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
 /* footer */
 footer {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     width: 100%;
     z-index: 3;
     justify-content: space-between;
@@ -147,10 +258,14 @@ footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    font-size: 2rem
+    font-size: 2rem;
 }
 
-@media (max-width: 992px){
+.iconos a {
+    color: black
+}
+
+@media (max-width: 992px) {
     .button__link {
         width: 80%;
         margin-bottom: .5rem;
@@ -164,3 +279,11 @@ footer {
         font-size: 3rem;
     }
 }
+
+
+
+
+
+
+
+  
