@@ -1,3 +1,7 @@
+body {
+    font-family: Alata, Arial, Helvetica, sans-serif !important;
+}
+
 .gallery__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -136,6 +140,10 @@
     
 }
 
+.img-cosplay {
+    border-radius: 50%;
+    width: 100%;
+}
 
 
 
