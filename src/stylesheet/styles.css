@@ -169,19 +169,28 @@ nav div a {
 
 .flayer__container {
     display: grid;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas en dispositivos móviles */
-    gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
     grid-auto-rows: 20rem;
     grid-gap: 1rem;
     margin: 3rem 2rem;
     margin-bottom: 5rem;
+    grid-row-start: span 2;
 }
+
+@media (max-width: 992px) {
+    .flayer__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-start: span 2;
+    }
+}
+
 
 .flayer__item {
     position: relative;
     display: flex;
     justify-content: center;
+
 }
 
 .flayer__img {
@@ -189,7 +198,7 @@ nav div a {
     height: 100%;
     object-fit: cover;
     filter: contrast(0.8);
-    filter: brightness(.8)
+    filter: brightness(.8);
 }
 
 .flayer__img:hover {
