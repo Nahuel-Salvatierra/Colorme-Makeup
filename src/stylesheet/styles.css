@@ -6,6 +6,10 @@ ul div a{
     text-decoration: none;
     color: black;
 }
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
 
 /* navbar top */
 nav div a {
