@@ -169,7 +169,9 @@ nav div a {
 
 .flayer__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en dispositivos móviles */
+    gap: 20px; /* Espacio entre las imágenes */
     grid-auto-rows: 20rem;
     grid-gap: 1rem;
     margin: 3rem 2rem;
