@@ -2,6 +2,10 @@ body {
     font-family: Alata, Arial, Helvetica, sans-serif !important;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 ul div a{
     text-decoration: none;
     color: black;
@@ -271,7 +275,7 @@ nav div a {
 /* footer */
 footer {
     background-color: rgb(240, 240, 240);
-    width: 100%;
+    width: 100vw;
     z-index: 3;
     justify-content: space-between;
     text-justify: center;
