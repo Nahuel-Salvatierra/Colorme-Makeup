@@ -243,6 +243,11 @@ nav div a {
 
 
 /* flayer */
+
+img {
+    on: none;
+  }
+
 .title__service {
     text-transform: uppercase;
 }
